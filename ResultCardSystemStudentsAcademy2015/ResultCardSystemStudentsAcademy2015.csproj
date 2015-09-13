@@ -92,12 +92,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ResultCardDB.mdf">
+    <Content Include="DB.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="ResultCardDB_log.ldf">
+    <Content Include="DB_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>ResultCardDB.mdf</DependentUpon>
+      <DependentUpon>DB.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
