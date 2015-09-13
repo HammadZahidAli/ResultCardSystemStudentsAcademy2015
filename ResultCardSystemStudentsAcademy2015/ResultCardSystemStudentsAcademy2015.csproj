@@ -67,6 +67,12 @@
     <Compile Include="F33orm2.Designer.cs">
       <DependentUpon>F33orm2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Fjjorm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fjjorm2.Designer.cs">
+      <DependentUpon>Fjjorm2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
