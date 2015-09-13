@@ -67,11 +67,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form2qq.cs">
+    <Compile Include="Form2jjjk.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form2qq.Designer.cs">
-      <DependentUpon>Form2qq.cs</DependentUpon>
+    <Compile Include="Form2jjjk.Designer.cs">
+      <DependentUpon>Form2jjjk.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ResultCardSystemStudentsAcademy2015
 {
-    public partial class Form2qq : Form
+    public partial class Form2jjjk : Form
     {
-        public Form2qq()
+        public Form2jjjk()
         {
             InitializeComponent();
         }

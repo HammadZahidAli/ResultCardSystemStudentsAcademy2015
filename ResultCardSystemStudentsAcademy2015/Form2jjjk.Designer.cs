@@ -1,6 +1,6 @@
 ﻿namespace ResultCardSystemStudentsAcademy2015
 {
-    partial class Form2qq
+    partial class Form2jjjk
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form2qq";
+            this.Text = "Form2jjjk";
         }
 
         #endregion
