@@ -10,31 +10,16 @@ using System.Windows.Forms;
 
 namespace ResultCardSystemStudentsAcademy2015
 {
-    public partial class Form1 : Form
+    public partial class ResultForm : Form
     {
-        public Form1()
+        public ResultForm()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void ResultForm_Load(object sender, EventArgs e)
         {
             this.CenterToScreen();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -42,7 +27,7 @@ namespace ResultCardSystemStudentsAcademy2015
 
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void textBox10_TextChanged(object sender, EventArgs e)
         {
 
         }
