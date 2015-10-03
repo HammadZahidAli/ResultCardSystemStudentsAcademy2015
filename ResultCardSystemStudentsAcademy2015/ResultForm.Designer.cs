@@ -152,12 +152,21 @@
             // comboBox6
             // 
             this.comboBox6.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
-            "Urdu",
-            "Punjabi",
-            "Islamiyat"});
+            "2015-16 / 1st Term",
+            "2015-16 / 2nd Term",
+            "2015-16 / 2nd Term",
+            "2016-17 / 1st Term",
+            "2016-17 / 2nd Term",
+            "2016-17 / 3rd Term",
+            "2017-18 / 1st Term",
+            "2017-18 / 2nd Term",
+            "2017-18 / 3rd Term",
+            "2018-19 / 1st Term",
+            "2018-19 / 2nd Term",
+            "2018-19 / 3rd Term",
+            ""});
             this.comboBox6.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.comboBox6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.RecentlyUsedList;
+            this.comboBox6.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Location = new System.Drawing.Point(573, 75);
@@ -270,13 +279,13 @@
             // closeToolStripMenuItem
             // 
             this.closeToolStripMenuItem.Name = "closeToolStripMenuItem";
-            this.closeToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.closeToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.closeToolStripMenuItem.Text = "Close";
             // 
             // aboutUsToolStripMenuItem
             // 
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutUsToolStripMenuItem.Text = "About Us";
             // 
             // fileToolStripMenuItem
@@ -294,7 +303,7 @@
             this.fileToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1076, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1059, 24);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -525,9 +534,23 @@
             // comboBox12
             // 
             this.comboBox12.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra",
+            "Nazra",
+            "Nazra"});
             this.comboBox12.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox12.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -540,9 +563,21 @@
             // comboBox13
             // 
             this.comboBox13.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox13.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox13.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox13.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -555,9 +590,21 @@
             // comboBox14
             // 
             this.comboBox14.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox14.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox14.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox14.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -570,9 +617,21 @@
             // comboBox15
             // 
             this.comboBox15.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox15.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox15.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox15.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -585,9 +644,21 @@
             // comboBox16
             // 
             this.comboBox16.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox16.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox16.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox16.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -600,9 +671,21 @@
             // comboBox17
             // 
             this.comboBox17.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox17.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox17.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -615,9 +698,36 @@
             // comboBox18
             // 
             this.comboBox18.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra",
+            "NazraEnglish Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
+            "Urdu",
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox18.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox18.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox18.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -630,9 +740,21 @@
             // comboBox19
             // 
             this.comboBox19.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox19.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox19.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox19.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -645,9 +767,21 @@
             // comboBox20
             // 
             this.comboBox20.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox20.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox20.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox20.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -660,9 +794,21 @@
             // comboBox21
             // 
             this.comboBox21.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox21.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox21.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -675,9 +821,21 @@
             // comboBox22
             // 
             this.comboBox22.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox22.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox22.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox22.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -690,9 +848,21 @@
             // comboBox23
             // 
             this.comboBox23.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox23.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox23.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox23.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -705,9 +875,21 @@
             // comboBox24
             // 
             this.comboBox24.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox24.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox24.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -720,9 +902,21 @@
             // comboBox25
             // 
             this.comboBox25.AutoCompleteCustomSource.AddRange(new string[] {
-            "English",
+            "English Oral",
+            "English Written",
+            "Urdu Oral",
+            "Urdu Written",
+            "Math Oral",
+            "Math Witten",
+            "History",
+            "Islamiat",
+            "Drawing",
+            "Pak Studies",
+            "Social Studies",
             "Urdu",
-            "Science"});
+            "English",
+            "Science",
+            "Nazra"});
             this.comboBox25.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox25.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox25.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
@@ -737,7 +931,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1076, 741);
+            this.ClientSize = new System.Drawing.Size(1076, 682);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tableLayoutPanel1);
