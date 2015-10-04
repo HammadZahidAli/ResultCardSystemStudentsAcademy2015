@@ -1017,6 +1017,127 @@ namespace ResultCardSystemStudentsAcademy2015
 
         }
 
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Refresh();
+            comboBox100.ResetText();
+            comboBox102.ResetText();
+            comboBox104.ResetText();
+            comboBox106.ResetText();
+            comboBox108.ResetText();
+            comboBox110.ResetText();
+            comboBox112.ResetText();
+            comboBox114.ResetText();
+            comboBox116.ResetText();
+            comboBox118.ResetText();
+            comboBox120.ResetText();
+            comboBox122.ResetText();
+            comboBox124.ResetText();
+
+
+            comboBox101.ResetText();
+            comboBox103.ResetText();
+            comboBox105.ResetText();
+            comboBox107.ResetText();
+            comboBox109.ResetText();
+            comboBox111.ResetText();
+            comboBox113.ResetText();
+            comboBox115.ResetText();
+            comboBox117.ResetText();
+            comboBox119.ResetText();
+            comboBox121.ResetText();
+            comboBox123.ResetText();
+            comboBox125.ResetText();
+
+
+            comboBox200.ResetText();
+            comboBox202.ResetText();
+            comboBox204.ResetText();
+            comboBox206.ResetText();
+            comboBox208.ResetText();
+            comboBox210.ResetText();
+            comboBox212.ResetText();
+            comboBox214.ResetText();
+            comboBox216.ResetText();
+            comboBox218.ResetText();
+            comboBox220.ResetText();
+            comboBox222.ResetText();
+            comboBox224.ResetText();
+
+
+            comboBox201.ResetText();
+            comboBox203.ResetText();
+            comboBox205.ResetText();
+            comboBox207.ResetText();
+            comboBox209.ResetText();
+            comboBox211.ResetText();
+            comboBox213.ResetText();
+            comboBox215.ResetText();
+            comboBox217.ResetText();
+            comboBox219.ResetText();
+            comboBox221.ResetText();
+            comboBox223.ResetText();
+            comboBox225.ResetText();
+
+
+            comboBox300.ResetText();
+            comboBox302.ResetText();
+            comboBox304.ResetText();
+            comboBox302.ResetText();
+            comboBox304.ResetText();
+            comboBox306.ResetText();
+            comboBox302.ResetText();
+            comboBox304.ResetText();
+            comboBox306.ResetText();
+            comboBox308.ResetText();
+            comboBox310.ResetText();
+            comboBox312.ResetText();
+            comboBox314.ResetText();
+            comboBox316.ResetText();
+            comboBox318.ResetText();
+            comboBox320.ResetText();
+            comboBox322.ResetText();
+            comboBox324.ResetText();
+
+
+            comboBox301.ResetText();
+            comboBox303.ResetText();
+            comboBox305.ResetText();
+            comboBox307.ResetText();
+            comboBox309.ResetText();
+            comboBox311.ResetText();
+            comboBox313.ResetText();
+            comboBox315.ResetText();
+            comboBox317.ResetText();
+            comboBox319.ResetText();
+            comboBox321.ResetText();
+            comboBox323.ResetText();
+            comboBox325.ResetText();
+            comboBox308.ResetText();
+            comboBox310.ResetText();
+            comboBox312.ResetText();
+            comboBox314.ResetText();
+            comboBox316.ResetText();
+            comboBox318.ResetText();
+            comboBox320.ResetText();
+            comboBox322.ResetText();
+            comboBox324.ResetText();
+
+
+            comboBox301.ResetText();
+            comboBox303.ResetText();
+            comboBox305.ResetText();
+            comboBox307.ResetText();
+            comboBox309.ResetText();
+            comboBox311.ResetText();
+            comboBox313.ResetText();
+            comboBox315.ResetText();
+            comboBox317.ResetText();
+            comboBox319.ResetText();
+            comboBox321.ResetText();
+            comboBox323.ResetText();
+            comboBox325.ResetText();
+        }
     }
 
 }
