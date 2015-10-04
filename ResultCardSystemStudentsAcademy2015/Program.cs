@@ -18,6 +18,7 @@ namespace ResultCardSystemStudentsAcademy2015
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new BySoftFort());
 
+
         }
     }
 }
