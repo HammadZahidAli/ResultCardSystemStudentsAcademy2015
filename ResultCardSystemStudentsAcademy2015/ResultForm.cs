@@ -287,13 +287,13 @@ namespace ResultCardSystemStudentsAcademy2015
         public void CreateReceipt(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             //float cash = float.Parse(textBox4.Text.ToString());
-           // float change = 0.00f;
+            // float change = 0.00f;
 
             //this prints the reciept
 
             Graphics graphic = e.Graphics;
 
-            Font font = new Font("Courier New", 12); //must use a mono spaced font as the spaces need to line up
+            Font font = new Font("Times New Roman", 10); //must use a mono spaced font as the spaces need to line up
 
             float fontHeight = font.GetHeight();
 
@@ -301,34 +301,68 @@ namespace ResultCardSystemStudentsAcademy2015
             int startY = 10;
             int offset = 40;
 
-            graphic.DrawString(" KIDS GARDENIA SCHOOL \n", new Font("Courier New", 18), new SolidBrush(Color.Black), startX, startY);
-           // string top = "Item Name".PadRight(30) + "Price";
+            //graphic.DrawString(" KIDS GARDENIA SCHOOL \n", new Font("Courier New", 18), new SolidBrush(Color.Black), startX, startY);
+            // string top = "Item Name".PadRight(30) + "Price";
             //graphic.DrawString(top, font, new SolidBrush(Color.Black), startX, startY + offset);
             offset = offset + (int)fontHeight; //make the spacing consistent
-            graphic.DrawString("----------------------------------", font, new SolidBrush(Color.Black), startX, startY + offset);
+
+            // graphic.DrawString("----------------------------------", font, new SolidBrush(Color.Black), startX, startY + offset);
             offset = offset + (int)fontHeight + 5; //make the spacing consistent
-            graphic.DrawString("".PadLeft(3)+"Name " + comboBox1.Text.PadRight(20) + "".PadLeft(3) + " Class " + comboBox2.Text + "\n" + "".PadLeft(3) + "Roll No. " + comboBox3.Text.PadRight(20) +  "Attendance " + comboBox4.Text + "\n" + "".PadLeft(3) +"Position " + comboBox5.Text.PadRight(20) + "Session " + comboBox6.Text
-                , new Font("Courier New", 14), new SolidBrush(Color.Black), startX, startY + offset);
+
+            //graphic.DrawString("".PadLeft(10) + "Name".PadRight(5) + comboBox1.Text.PadRight(20) + " Class".PadRight(10) + comboBox2.Text + "\n" +
+            //                  "".PadLeft(10) + "Roll No.".PadRight(10) + comboBox3.Text.PadRight(20) + "Attendance".PadRight(10) + comboBox4.Text + "\n" +
+            //                  "".PadLeft(10) + "Position".PadRight(10) + comboBox5.Text.PadRight(20) + "Session".PadRight(10) + comboBox6.Text + "\n\n"
+            //   , new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX, startY + offset);
+
+            //left side
+            graphic.DrawString("".PadLeft(10) + "Name: ".PadRight(5) + comboBox1.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX, startY + offset);
+            graphic.DrawString("Class: ".PadRight(5) + comboBox2.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX + 300, startY + offset);
+
+            offset = offset + FontHeight;
+            graphic.DrawString("".PadLeft(10) + "RollNO.".PadRight(5) + comboBox3.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX, startY + offset);
+            graphic.DrawString("Attendance: ".PadRight(5) + comboBox4.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX + 300, startY + offset);
+
+            offset = offset + FontHeight;
+            graphic.DrawString("".PadLeft(10) + "Position: ".PadRight(5) + comboBox3.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX, startY + offset);
+            graphic.DrawString("Session: ".PadRight(5) + comboBox6.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX + 300, startY + offset);
+
+
 
             offset = offset + (int)fontHeight + 10; //make the spacing consistent
             // Marks
-            offset = offset+40;
+            offset = offset + 40;
 
-            string subj = "".PadLeft(3)+"Subjects".PadRight(13);
+            string subj = "".PadLeft(3) + "Subjects".PadRight(13);
 
-            if(checkBox1.Checked || checkBox2.Checked || checkBox3.Checked)
+            if (checkBox1.Checked || checkBox2.Checked || checkBox3.Checked)
                 subj = "".PadLeft(14) + "Subjects".PadRight(13);
 
-            string top1="", top2="", top3="";
+            string top1 = "", top2 = "", top3 = "", top4 = "", top5 = "", top6 = "";
             if (!checkBox1.Checked)
-                top1 = "1st Term".PadRight(10) + "Obt.Marks".PadRight(12);
+            {
+                top1 = "1st Term".PadRight(10);
+                top2 = "Obt.Marks".PadRight(12);
+            }
             if (!checkBox2.Checked)
-                top2 = "2nd Term".PadRight(10) + "Obt.Marks".PadRight(12);
+            {
+                top3 = "2nd Term".PadRight(10);
+                top4 = "Obt.Marks".PadRight(12);
+            }
             if (!checkBox3.Checked)
-                top3 = "3rd Term".PadRight(10) + "Obt.Marks".PadRight(15);
+            {
+                top5 = "3rd Term".PadRight(10);
+                top6 = "Obt.Marks".PadRight(15);
+            }
+                
 
-            graphic.DrawString(subj+top1+top2+top3, font, new SolidBrush(Color.Black), startX, startY + offset);
-
+            //graphic.DrawString(subj+top1+top2+top3, font, new SolidBrush(Color.Black), startX, startY + offset);
+            graphic.DrawString(subj, font, new SolidBrush(Color.Black), startX, startY + offset);
+            graphic.DrawString(top1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+            graphic.DrawString(top2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+            graphic.DrawString(top3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+            graphic.DrawString(top4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+            graphic.DrawString(top5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+            graphic.DrawString(top6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
 
 
             //list of subjects
@@ -373,7 +407,15 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox301.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb1 + r1 +r2+ r3 + r4 + r5+ r6+"\n" , font, new SolidBrush(Color.Black), startX, startY + offset);
+               // graphic.DrawString(sb1 + r1 +r2+ r3 + r4 + r5+ r6+"\n" , font, new SolidBrush(Color.Black), startX, startY + offset);
+
+                graphic.DrawString(sb1 , font, new SolidBrush(Color.Black), startX , startY + offset);
+                graphic.DrawString(r1 , font, new SolidBrush(Color.Black), startX+100 , startY + offset);
+                graphic.DrawString(r2 , font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3 , font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4 , font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5 , font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6 , font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
 
             if (comboBox9.Text != "" ) //comboBox9.Text != null)
@@ -413,7 +455,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox303.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb2 + r1 + r2 + r3 + r4 + r5 + r6 +"\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                // graphic.DrawString(sb2 + r1 + r2 + r3 + r4 + r5 + r6 +"\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                graphic.DrawString(sb2, font, new SolidBrush(Color.Black), startX , startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
             if (comboBox10.Text != "" )//|| comboBox10.Text != null)
             {
@@ -452,7 +501,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox305.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb3+ r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                //graphic.DrawString(sb3+ r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                graphic.DrawString(sb3, font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
             if (comboBox11.Text != "" )//|| comboBox11.Text != null)
             {
@@ -491,7 +547,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox307.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb4+ r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                //graphic.DrawString(sb4+ r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                graphic.DrawString(sb4, font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
             if (comboBox12.Text != "" )//||  comboBox12.Text != null)
             {
@@ -530,7 +593,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox309.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb5 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                // graphic.DrawString(sb5 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                graphic.DrawString(sb5, font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
             if (comboBox13.Text != "" )//|| comboBox13.Text != null )
             {
@@ -569,7 +639,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox311.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb7 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                //graphic.DrawString(sb6 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                graphic.DrawString(sb6, font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
             if (comboBox14.Text != "" )//|| comboBox14.Text != null)
             {
@@ -608,7 +685,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox313.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb7 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                //graphic.DrawString(sb7 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                graphic.DrawString(sb7, font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
             if (comboBox15.Text != "" )//||  comboBox15.Text != null)
             {
@@ -647,7 +731,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox315.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb8 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset);
+                // graphic.DrawString(sb8 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(sb8, font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
             if (comboBox16.Text != "" )//||  comboBox16.Text != null)
             {
@@ -686,7 +777,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox317.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb9 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                // graphic.DrawString(sb9 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                graphic.DrawString(sb9, font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
             if (comboBox17.Text != "" )//||  comboBox17.Text != null)
             {
@@ -725,7 +823,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox319.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb10 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                //graphic.DrawString(sb10 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                graphic.DrawString(sb10, font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
             if (comboBox18.Text != "" )//|| comboBox18.Text != null)
             {
@@ -764,7 +869,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox321.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb11 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                //graphic.DrawString(sb11 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                graphic.DrawString(sb11, font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
             if (comboBox19.Text != "" )//|| comboBox19.Text != null)
             {
@@ -803,7 +915,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox323.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb12 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                //graphic.DrawString(sb12 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY + offset );
+                graphic.DrawString(sb12, font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
             if (comboBox20.Text != "" )//|| comboBox20.Text != null)
             {
@@ -842,7 +961,14 @@ namespace ResultCardSystemStudentsAcademy2015
                     term3Marks += float.Parse(comboBox325.Text); ;
                 }
                 offset += 40;
-                graphic.DrawString(sb13 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY );
+                // graphic.DrawString(sb13 + r1 + r2 + r3 + r4 + r5 + r6 + "\n", font, new SolidBrush(Color.Black), startX, startY );
+                graphic.DrawString(sb13, font, new SolidBrush(Color.Black), startX, startY + offset);
+                graphic.DrawString(r1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+                graphic.DrawString(r2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+                graphic.DrawString(r3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+                graphic.DrawString(r4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+                graphic.DrawString(r5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+                graphic.DrawString(r6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
             }
 
             label28.Text = term1Total.ToString();
@@ -853,21 +979,40 @@ namespace ResultCardSystemStudentsAcademy2015
             label33.Text = term3Marks.ToString();
 
 
+
             offset += 40;
-
-            string marks = "".PadLeft(3) + "".PadRight(13);
+            string marks = "".PadLeft(3) + "Total:".PadRight(13);
             if (checkBox1.Checked || checkBox2.Checked || checkBox3.Checked)
-                marks = "".PadLeft(14) + "Subjects".PadRight(13);
+                marks = "".PadLeft(14) + "Total:".PadRight(13);
 
-            string m1 = "", m2 = "", m3 = "";
+            string m1 = "", m2 = "", m3 = "", m4 = "", m5 = "", m6 = "";
             if (!checkBox1.Checked)
-                m1 = term1Total.ToString().PadRight(10) + term1Marks.ToString().PadRight(12);
+            {
+                m1 = term1Total.ToString().PadRight(10);
+                m2 = term1Marks.ToString().PadRight(12);
+            }
             if (!checkBox2.Checked)
-                m2 = term2Total.ToString().PadRight(10) + term2Marks.ToString().PadRight(12);
+            {
+                m3 = term2Total.ToString().PadRight(10);
+                m4 = term2Marks.ToString().PadRight(12);
+            }
             if (!checkBox3.Checked)
-                m3 = term3Total.ToString().PadRight(10) + term3Marks.ToString().PadRight(15);
+            {
+                m5 = term3Total.ToString().PadRight(10);
+                m6 = term3Marks.ToString().PadRight(15);
+            }
+                
 
-            graphic.DrawString(marks + m1 + m2 + m3, font, new SolidBrush(Color.Black), startX, startY + offset);
+            //graphic.DrawString(marks + m1 + m2 + m3, font, new SolidBrush(Color.Black), startX, startY + offset);
+
+            graphic.DrawString(marks, font, new SolidBrush(Color.Black), startX, startY + offset);
+            graphic.DrawString(m1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
+            graphic.DrawString(m2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
+            graphic.DrawString(m3, font, new SolidBrush(Color.Black), startX + 300, startY + offset);
+            graphic.DrawString(m4, font, new SolidBrush(Color.Black), startX + 400, startY + offset);
+            graphic.DrawString(m5, font, new SolidBrush(Color.Black), startX + 500, startY + offset);
+            graphic.DrawString(m6, font, new SolidBrush(Color.Black), startX + 600, startY + offset);
+
 
 
         }
