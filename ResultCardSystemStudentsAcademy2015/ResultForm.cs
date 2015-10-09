@@ -315,16 +315,16 @@ namespace ResultCardSystemStudentsAcademy2015
             //   , new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX, startY + offset);
 
             //left side
-            graphic.DrawString("".PadLeft(10) + "Name: ".PadRight(5) + comboBox1.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX, startY + offset);
-            graphic.DrawString("Class: ".PadRight(5) + comboBox2.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX + 300, startY + offset);
+            graphic.DrawString("".PadLeft(10) + "Name: ".PadRight(5) + comboBox1.Text, new Font("Times New Roman", 12, FontStyle.Bold), new SolidBrush(Color.Black), startX, startY + offset);
+            graphic.DrawString("Class: ".PadRight(5) + comboBox2.Text, new Font("Times New Roman", 12, FontStyle.Bold), new SolidBrush(Color.Black), startX + 300, startY + offset);
 
             offset = offset + FontHeight;
-            graphic.DrawString("".PadLeft(10) + "RollNO.".PadRight(5) + comboBox3.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX, startY + offset);
-            graphic.DrawString("Attendance: ".PadRight(5) + comboBox4.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX + 300, startY + offset);
+            graphic.DrawString("".PadLeft(10) + "RollNO.".PadRight(5) + comboBox3.Text, new Font("Times New Roman", 12, FontStyle.Bold), new SolidBrush(Color.Black), startX, startY + offset);
+            graphic.DrawString("Attendance: ".PadRight(5) + comboBox4.Text, new Font("Times New Roman", 12, FontStyle.Bold), new SolidBrush(Color.Black), startX + 300, startY + offset);
 
             offset = offset + FontHeight;
-            graphic.DrawString("".PadLeft(10) + "Position: ".PadRight(5) + comboBox3.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX, startY + offset);
-            graphic.DrawString("Session: ".PadRight(5) + comboBox6.Text, new Font("Times New Roman", 12), new SolidBrush(Color.Black), startX + 300, startY + offset);
+            graphic.DrawString("".PadLeft(10) + "Position: ".PadRight(5) + comboBox3.Text, new Font("Times New Roman", 12, FontStyle.Bold), new SolidBrush(Color.Black), startX, startY + offset);
+            graphic.DrawString("Session: ".PadRight(5) + comboBox6.Text, new Font("Times New Roman", 12, FontStyle.Bold), new SolidBrush(Color.Black), startX + 300, startY + offset);
 
 
 
@@ -332,10 +332,11 @@ namespace ResultCardSystemStudentsAcademy2015
             // Marks
             offset = offset + 40;
 
-            string subj = "".PadLeft(3) + "Subjects".PadRight(13);
+            string subj = "".PadLeft(3) + "Subjects";//.PadRight(13);
 
-            if (checkBox1.Checked || checkBox2.Checked || checkBox3.Checked)
-                subj = "".PadLeft(14) + "Subjects".PadRight(13);
+           // if (checkBox1.Checked || checkBox2.Checked || checkBox3.Checked)
+               // subj = "".PadLeft(14) + "Subjects";//.PadRight(13);
+               // subj = "Subjects".PadRight(13);
 
             string top1 = "", top2 = "", top3 = "", top4 = "", top5 = "", top6 = "";
             if (!checkBox1.Checked)
@@ -353,7 +354,9 @@ namespace ResultCardSystemStudentsAcademy2015
                 top5 = "3rd Term".PadRight(10);
                 top6 = "Obt.Marks".PadRight(15);
             }
-                
+             
+            if(checkBox1.Checked || checkBox2.Checked || checkBox3.Checked)
+                startX = startX + 150;
 
             //graphic.DrawString(subj+top1+top2+top3, font, new SolidBrush(Color.Black), startX, startY + offset);
             graphic.DrawString(subj, font, new SolidBrush(Color.Black), startX, startY + offset);
@@ -372,11 +375,16 @@ namespace ResultCardSystemStudentsAcademy2015
 
             if (comboBox8.Text != "" )// )//comboBox8.Text != null)
             {
-                sb1 = "".PadLeft(3) + comboBox8.Text.PadRight(13);
+                sb1 = "".PadLeft(3) + comboBox8.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
                     if(checkBox2.Checked || checkBox3.Checked)
-                        sb1 = "".PadLeft(14) + comboBox8.Text.PadRight(13);
+                    {
+                        //+ 
+                     //   sb1 = "".PadLeft(14) + comboBox8.Text.PadRight(13);
+                        //startX = startX + 200;
+                    }
+                       
 
                     r1 = comboBox100.Text.PadRight(10);
                     r2 = comboBox101.Text.PadRight(12);
@@ -387,7 +395,11 @@ namespace ResultCardSystemStudentsAcademy2015
                 if (!checkBox2.Checked)
                 {
                     if (checkBox1.Checked || checkBox3.Checked)
-                        sb1 = "".PadLeft(14) + comboBox8.Text.PadRight(13);
+                    {
+                      //  sb1 = "".PadLeft(14) + comboBox8.Text.PadRight(13);
+                        //startX = startX + 200;
+                    }
+                        
 
                     r3 = (comboBox200.Text).PadRight(10);
                     r4 = (comboBox201.Text).PadRight(12);
@@ -398,7 +410,11 @@ namespace ResultCardSystemStudentsAcademy2015
                 if (!checkBox3.Checked)
                 {
                     if (checkBox2.Checked || checkBox1.Checked)
-                        sb1 = "".PadLeft(14) + comboBox8.Text.PadRight(13);
+                    {
+                       // sb1 = "".PadLeft(14) + comboBox8.Text.PadRight(13);
+                       // startX = startX + 200;
+                    }
+                        
 
                     r5 = (comboBox300.Text).PadRight(10);
                     r6 = (comboBox301.Text).PadRight(12);
@@ -420,11 +436,11 @@ namespace ResultCardSystemStudentsAcademy2015
 
             if (comboBox9.Text != "" ) //comboBox9.Text != null)
             {
-                sb2 = "".PadLeft(3) + comboBox9.Text.PadRight(13);
+                sb2 = "".PadLeft(3) + comboBox9.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb2 = "".PadLeft(14) + comboBox9.Text.PadRight(13);
+                   // if (checkBox2.Checked || checkBox3.Checked)
+                       // sb2 = "".PadLeft(14) + comboBox9.Text.PadRight(13);
 
                     r1 = comboBox102.Text.PadRight(10);
                     r2 = comboBox103.Text.PadRight(12);
@@ -434,8 +450,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox1.Checked || checkBox3.Checked)
-                        sb2 = "".PadLeft(14) + comboBox9.Text.PadRight(13);
+                   // if (checkBox1.Checked || checkBox3.Checked)
+                     //   sb2 = "".PadLeft(14) + comboBox9.Text.PadRight(13);
 
                     r3 = (comboBox202.Text).PadRight(10);
                     r4 = (comboBox203.Text).PadRight(12);
@@ -445,8 +461,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox1.Checked || checkBox2.Checked)
-                        sb2 = "".PadLeft(14) + comboBox9.Text.PadRight(13);
+                  // if (checkBox1.Checked || checkBox2.Checked)
+                       // sb2 = "".PadLeft(14) + comboBox9.Text.PadRight(13);
 
                     r5 = (comboBox302.Text).PadRight(10);
                     r6 = (comboBox303.Text).PadRight(12);
@@ -466,11 +482,11 @@ namespace ResultCardSystemStudentsAcademy2015
             }
             if (comboBox10.Text != "" )//|| comboBox10.Text != null)
             {
-                sb3 = "".PadLeft(3) + comboBox10.Text.PadRight(13);
+                sb3 = "".PadLeft(3) + comboBox10.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb3 = "".PadLeft(14) + comboBox10.Text.PadRight(13);
+                    //if (checkBox2.Checked || checkBox3.Checked)
+                       // sb3 = "".PadLeft(14) + comboBox10.Text.PadRight(13);
 
                     r1 = comboBox104.Text.PadRight(10);
                     r2 = comboBox105.Text.PadRight(12);
@@ -480,8 +496,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox1.Checked || checkBox3.Checked)
-                        sb3 = "".PadLeft(14) + comboBox10.Text.PadRight(13);
+                   // if (checkBox1.Checked || checkBox3.Checked)
+                      //  sb3 = "".PadLeft(14) + comboBox10.Text.PadRight(13);
 
                     r3 = (comboBox204.Text).PadRight(10);
                     r4 = (comboBox205.Text).PadRight(12);
@@ -491,8 +507,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb3 = "".PadLeft(14) + comboBox10.Text.PadRight(13);
+                   // if (checkBox2.Checked || checkBox1.Checked)
+                        //sb3 = "".PadLeft(14) + comboBox10.Text.PadRight(13);
 
                     r5 = (comboBox304.Text).PadRight(10);
                     r6 = (comboBox305.Text).PadRight(12);
@@ -512,11 +528,11 @@ namespace ResultCardSystemStudentsAcademy2015
             }
             if (comboBox11.Text != "" )//|| comboBox11.Text != null)
             {
-                sb4 = "".PadLeft(3) + comboBox11.Text.PadRight(13);
+                sb4 = "".PadLeft(3) + comboBox11.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb4 = "".PadLeft(14) + comboBox11.Text.PadRight(13);
+                   // if (checkBox2.Checked || checkBox3.Checked)
+                      //  sb4 = "".PadLeft(14) + comboBox11.Text.PadRight(13);
 
                     r1 = comboBox106.Text.PadRight(10);
                     r2 = comboBox107.Text.PadRight(12);
@@ -526,8 +542,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox1.Checked || checkBox3.Checked)
-                        sb4 = "".PadLeft(14) + comboBox11.Text.PadRight(13);
+                   // if (checkBox1.Checked || checkBox3.Checked)
+                        //sb4 = "".PadLeft(14) + comboBox11.Text.PadRight(13);
 
                     r3 = (comboBox206.Text).PadRight(10);
                     r4 = (comboBox207.Text).PadRight(12);
@@ -537,8 +553,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb4 = "".PadLeft(14) + comboBox11.Text.PadRight(13);
+                   // if (checkBox2.Checked || checkBox1.Checked)
+                       // sb4 = "".PadLeft(14) + comboBox11.Text.PadRight(13);
 
                     r5 = (comboBox306.Text).PadRight(10);
                     r6 = (comboBox307.Text).PadRight(12);
@@ -558,11 +574,11 @@ namespace ResultCardSystemStudentsAcademy2015
             }
             if (comboBox12.Text != "" )//||  comboBox12.Text != null)
             {
-                sb5 = "".PadLeft(3) + comboBox12.Text.PadRight(13);
+                sb5 = "".PadLeft(3) + comboBox12.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb5 = "".PadLeft(14) + comboBox12.Text.PadRight(13);
+                    //if (checkBox2.Checked || checkBox3.Checked)
+                        //sb5 = "".PadLeft(14) + comboBox12.Text.PadRight(13);
 
                     r1 = comboBox108.Text.PadRight(10);
                     r2 = comboBox109.Text.PadRight(12);
@@ -572,8 +588,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox3.Checked || checkBox1.Checked)
-                        sb5 = "".PadLeft(14) + comboBox12.Text.PadRight(13);
+                   // if (checkBox3.Checked || checkBox1.Checked)
+                      //  sb5 = "".PadLeft(14) + comboBox12.Text.PadRight(13);
 
                     r3 = (comboBox208.Text).PadRight(10);
                     r4 = (comboBox209.Text).PadRight(12);
@@ -583,8 +599,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb5 = "".PadLeft(14) + comboBox12.Text.PadRight(13);
+                   // if (checkBox2.Checked || checkBox1.Checked)
+                     //   sb5 = "".PadLeft(14) + comboBox12.Text.PadRight(13);
 
                     r5 = (comboBox308.Text).PadRight(10);
                     r6 = (comboBox309.Text).PadRight(12);
@@ -604,11 +620,11 @@ namespace ResultCardSystemStudentsAcademy2015
             }
             if (comboBox13.Text != "" )//|| comboBox13.Text != null )
             {
-                sb6 = "".PadLeft(3) + comboBox13.Text.PadRight(13);
+                sb6 = "".PadLeft(3) + comboBox13.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb6 = "".PadLeft(14) + comboBox13.Text.PadRight(13);
+                   // if (checkBox2.Checked || checkBox3.Checked)
+                      //  sb6 = "".PadLeft(14) + comboBox13.Text.PadRight(13);
 
                     r1 = comboBox110.Text.PadRight(10);
                     r2 = comboBox111.Text.PadRight(12);
@@ -618,8 +634,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox1.Checked || checkBox3.Checked)
-                        sb6 = "".PadLeft(14) + comboBox13.Text.PadRight(13);
+                   // if (checkBox1.Checked || checkBox3.Checked)
+                      //  sb6 = "".PadLeft(14) + comboBox13.Text.PadRight(13);
 
                     r3 = (comboBox210.Text).PadRight(10);
                     r4 = (comboBox211.Text).PadRight(12);
@@ -629,8 +645,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb6 = "".PadLeft(14) + comboBox13.Text.PadRight(13);
+                  //  if (checkBox2.Checked || checkBox1.Checked)
+                       // sb6 = "".PadLeft(14) + comboBox13.Text.PadRight(13);
 
                     r5 = (comboBox310.Text).PadRight(10);
                     r6 = (comboBox311.Text).PadRight(12);
@@ -650,11 +666,11 @@ namespace ResultCardSystemStudentsAcademy2015
             }
             if (comboBox14.Text != "" )//|| comboBox14.Text != null)
             {
-                sb7 = "".PadLeft(3) + comboBox14.Text.PadRight(13);
+                sb7 = "".PadLeft(3) + comboBox14.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb7 = "".PadLeft(14) + comboBox14.Text.PadRight(13);
+                   // if (checkBox2.Checked || checkBox3.Checked)
+                       // sb7 = "".PadLeft(14) + comboBox14.Text.PadRight(13);
 
                     r1 = comboBox112.Text.PadRight(10);
                     r2 = comboBox113.Text.PadRight(12);
@@ -664,8 +680,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox1.Checked || checkBox3.Checked)
-                        sb7 = "".PadLeft(14) + comboBox14.Text.PadRight(13);
+                  //  if (checkBox1.Checked || checkBox3.Checked)
+                      //  sb7 = "".PadLeft(14) + comboBox14.Text.PadRight(13);
 
                     r3 = (comboBox212.Text).PadRight(10);
                     r4 = (comboBox213.Text).PadRight(12);
@@ -675,8 +691,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb7 = "".PadLeft(14) + comboBox14.Text.PadRight(13);
+                  //  if (checkBox2.Checked || checkBox1.Checked)
+                      //  sb7 = "".PadLeft(14) + comboBox14.Text.PadRight(13);
 
                     r5 = (comboBox312.Text).PadRight(10);
                     r6 = (comboBox313.Text).PadRight(12);
@@ -696,11 +712,11 @@ namespace ResultCardSystemStudentsAcademy2015
             }
             if (comboBox15.Text != "" )//||  comboBox15.Text != null)
             {
-                sb8 = "".PadLeft(3) + comboBox15.Text.PadRight(13);
+                sb8 = "".PadLeft(3) + comboBox15.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb8 = "".PadLeft(14) + comboBox15.Text.PadRight(13);
+                    //if (checkBox2.Checked || checkBox3.Checked)
+                    //    sb8 = "".PadLeft(14) + comboBox15.Text.PadRight(13);
 
                     r1 = comboBox114.Text.PadRight(10);
                     r2 = comboBox115.Text.PadRight(12);
@@ -710,8 +726,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb8 = "".PadLeft(14) + comboBox15.Text.PadRight(13);
+                    //if (checkBox2.Checked || checkBox1.Checked)
+                    //    sb8 = "".PadLeft(14) + comboBox15.Text.PadRight(13);
 
                     r3 = (comboBox214.Text).PadRight(10);
                     r4 = (comboBox215.Text).PadRight(12);
@@ -721,8 +737,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb8 = "".PadLeft(14) + comboBox15.Text.PadRight(13);
+                   // if (checkBox2.Checked || checkBox1.Checked)
+                      //  sb8 = "".PadLeft(14) + comboBox15.Text.PadRight(13);
 
                     r5 = (comboBox314.Text).PadRight(10);
                     r6 = (comboBox315.Text).PadRight(12);
@@ -742,11 +758,11 @@ namespace ResultCardSystemStudentsAcademy2015
             }
             if (comboBox16.Text != "" )//||  comboBox16.Text != null)
             {
-                sb9 = "".PadLeft(3) + comboBox16.Text.PadRight(13);
+                sb9 = "".PadLeft(3) + comboBox16.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb9 = "".PadLeft(14) + comboBox16.Text.PadRight(13);
+                   //// if (checkBox2.Checked || checkBox3.Checked)
+                       // sb9 = "".PadLeft(14) + comboBox16.Text.PadRight(13);
 
                     r1 = comboBox116.Text.PadRight(10);
                     r2 = comboBox117.Text.PadRight(12);
@@ -756,8 +772,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb9 = "".PadLeft(14) + comboBox16.Text.PadRight(13);
+                   // if (checkBox2.Checked || checkBox1.Checked)
+                      //  sb9 = "".PadLeft(14) + comboBox16.Text.PadRight(13);
 
                     r3 = (comboBox216.Text).PadRight(10);
                     r4 = (comboBox217.Text).PadRight(12);
@@ -767,8 +783,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb9 = "".PadLeft(14) + comboBox16.Text.PadRight(13);
+                  //  if (checkBox2.Checked || checkBox1.Checked)
+                     //   sb9 = "".PadLeft(14) + comboBox16.Text.PadRight(13);
 
                     r5 = (comboBox316.Text).PadRight(10);
                     r6 = (comboBox317.Text).PadRight(12);
@@ -788,11 +804,11 @@ namespace ResultCardSystemStudentsAcademy2015
             }
             if (comboBox17.Text != "" )//||  comboBox17.Text != null)
             {
-                sb10 = "".PadLeft(3) + comboBox17.Text.PadRight(13);
+                sb10 = "".PadLeft(3) + comboBox17.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb10 = "".PadLeft(14) + comboBox17.Text.PadRight(13);
+                    //if (checkBox2.Checked || checkBox3.Checked)
+                    //    sb10 = "".PadLeft(14) + comboBox17.Text.PadRight(13);
 
                     r1 = comboBox118.Text.PadRight(10);
                     r2 = comboBox119.Text.PadRight(12);
@@ -802,8 +818,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox1.Checked || checkBox3.Checked)
-                        sb10 = "".PadLeft(14) + comboBox17.Text.PadRight(13);
+                    //if (checkBox1.Checked || checkBox3.Checked)
+                       // sb10 = "".PadLeft(14) + comboBox17.Text.PadRight(13);
 
                     r3 = (comboBox218.Text).PadRight(10);
                     r4 = (comboBox219.Text).PadRight(12);
@@ -813,8 +829,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb10 = "".PadLeft(14) + comboBox17.Text.PadRight(13);
+                    //if (checkBox2.Checked || checkBox1.Checked)
+                       // sb10 = "".PadLeft(14) + comboBox17.Text.PadRight(13);
 
                     r5 = (comboBox318.Text).PadRight(10);
                     r6 = (comboBox319.Text).PadRight(12);
@@ -834,11 +850,11 @@ namespace ResultCardSystemStudentsAcademy2015
             }
             if (comboBox18.Text != "" )//|| comboBox18.Text != null)
             {
-                sb11 = "".PadLeft(3) + comboBox18.Text.PadRight(13);
+                sb11 = "".PadLeft(3) + comboBox18.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb11 = "".PadLeft(14) + comboBox18.Text.PadRight(13);
+                  //  if (checkBox2.Checked || checkBox3.Checked)
+                       // sb11 = "".PadLeft(14) + comboBox18.Text.PadRight(13);
 
                     r1 = comboBox120.Text.PadRight(10);
                     r2 = comboBox121.Text.PadRight(12);
@@ -848,8 +864,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox1.Checked || checkBox3.Checked)
-                        sb11 = "".PadLeft(14) + comboBox18.Text.PadRight(13);
+                    //if (checkBox1.Checked || checkBox3.Checked)
+                       // sb11 = "".PadLeft(14) + comboBox18.Text.PadRight(13);
 
                     r3 = (comboBox220.Text).PadRight(10);
                     r4 = (comboBox221.Text).PadRight(12);
@@ -859,8 +875,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox1.Checked || checkBox3.Checked)
-                        sb11 = "".PadLeft(14) + comboBox18.Text.PadRight(13);
+                    //if (checkBox1.Checked || checkBox3.Checked)
+                       // sb11 = "".PadLeft(14) + comboBox18.Text.PadRight(13);
 
                     r5 = (comboBox320.Text).PadRight(10);
                     r6 = (comboBox321.Text).PadRight(12);
@@ -880,11 +896,11 @@ namespace ResultCardSystemStudentsAcademy2015
             }
             if (comboBox19.Text != "" )//|| comboBox19.Text != null)
             {
-                sb12 = "".PadLeft(3) + comboBox19.Text.PadRight(13);
+                sb12 = "".PadLeft(3) + comboBox19.Text;//.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb12 = "".PadLeft(14) + comboBox19.Text.PadRight(13);
+                    //if (checkBox2.Checked || checkBox3.Checked)
+                      //  sb12 = "".PadLeft(14) + comboBox19.Text.PadRight(13);
 
                     r1 = comboBox122.Text.PadRight(10);
                     r2 = comboBox123.Text.PadRight(12);
@@ -894,8 +910,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb12 = "".PadLeft(14) + comboBox19.Text.PadRight(13);
+                   // if (checkBox2.Checked || checkBox1.Checked)
+                       // sb12 = "".PadLeft(14) + comboBox19.Text.PadRight(13);
 
                     r3 = (comboBox222.Text).PadRight(10);
                     r4 = (comboBox223.Text).PadRight(12);
@@ -905,8 +921,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox1.Checked || checkBox2.Checked)
-                        sb12 = "".PadLeft(14) + comboBox19.Text.PadRight(13);
+                  //  if (checkBox1.Checked || checkBox2.Checked)
+                       // sb12 = "".PadLeft(14) + comboBox19.Text.PadRight(13);
 
                     r5 = (comboBox322.Text).PadRight(10);
                     r6 = (comboBox323.Text).PadRight(12);
@@ -926,11 +942,11 @@ namespace ResultCardSystemStudentsAcademy2015
             }
             if (comboBox20.Text != "" )//|| comboBox20.Text != null)
             {
-                sb13 = "".PadLeft(3) + comboBox20.Text.PadRight(13);
+                sb13 = "".PadLeft(3) + comboBox20;//.Text.PadRight(13);
                 if (!checkBox1.Checked)
                 {
-                    if (checkBox2.Checked || checkBox3.Checked)
-                        sb13 = "".PadLeft(14) + comboBox20.Text.PadRight(13);
+                    //if (checkBox2.Checked || checkBox3.Checked)
+                       // sb13 = "".PadLeft(14) + comboBox20.Text.PadRight(13);
 
                     r1 = comboBox124.Text.PadRight(10);
                     r2 = comboBox125.Text.PadRight(12);
@@ -940,8 +956,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox2.Checked)
                 {
-                    if (checkBox1.Checked || checkBox3.Checked)
-                        sb13 = "".PadLeft(14) + comboBox20.Text.PadRight(13);
+                    //if (checkBox1.Checked || checkBox3.Checked)
+                      //  sb13 = "".PadLeft(14) + comboBox20.Text.PadRight(13);
 
                     r3 = (comboBox224.Text).PadRight(10);
                     r4 = (comboBox225.Text).PadRight(12);
@@ -951,8 +967,8 @@ namespace ResultCardSystemStudentsAcademy2015
                 }
                 if (!checkBox3.Checked)
                 {
-                    if (checkBox2.Checked || checkBox1.Checked)
-                        sb13 = "".PadLeft(14) + comboBox20.Text.PadRight(13);
+                   // if (checkBox2.Checked || checkBox1.Checked)
+                     //   sb13 = "".PadLeft(14) + comboBox20.Text.PadRight(13);
 
                     r5 = (comboBox324.Text).PadRight(10);
                     r6 = (comboBox325.Text).PadRight(12);
@@ -982,8 +998,8 @@ namespace ResultCardSystemStudentsAcademy2015
 
             offset += 40;
             string marks = "".PadLeft(3) + "Total:".PadRight(13);
-            if (checkBox1.Checked || checkBox2.Checked || checkBox3.Checked)
-                marks = "".PadLeft(14) + "Total:".PadRight(13);
+            //if (checkBox1.Checked || checkBox2.Checked || checkBox3.Checked)
+               // marks = "".PadLeft(14) + "Total:".PadRight(13);
 
             string m1 = "", m2 = "", m3 = "", m4 = "", m5 = "", m6 = "";
             if (!checkBox1.Checked)
@@ -1001,10 +1017,11 @@ namespace ResultCardSystemStudentsAcademy2015
                 m5 = term3Total.ToString().PadRight(10);
                 m6 = term3Marks.ToString().PadRight(15);
             }
-                
+
 
             //graphic.DrawString(marks + m1 + m2 + m3, font, new SolidBrush(Color.Black), startX, startY + offset);
-
+            font = new Font("Times New Roman",10,FontStyle.Bold);
+            
             graphic.DrawString(marks, font, new SolidBrush(Color.Black), startX, startY + offset);
             graphic.DrawString(m1, font, new SolidBrush(Color.Black), startX + 100, startY + offset);
             graphic.DrawString(m2, font, new SolidBrush(Color.Black), startX + 200, startY + offset);
