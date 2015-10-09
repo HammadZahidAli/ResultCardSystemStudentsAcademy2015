@@ -1178,6 +1178,11 @@ namespace ResultCardSystemStudentsAcademy2015
             comboBox323.ResetText();
             comboBox325.ResetText();
         }
+
+        private void aboutUsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("A SoftFort Product. All Rights are Reserved. \nFounded BY: MR. HAMMAD ZAHID ALI (Software Eng.)."+"\n For any kind of Business Software you can Trust our Team with One Year Special Service for special Products.\n"+"Contact Us: 0333-4658115");
+        }
     }
 
 }
