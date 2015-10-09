@@ -159,6 +159,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutUsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -169,7 +170,6 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -383,13 +383,13 @@
             this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.tableLayoutPanel1.ColumnCount = 8;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 38F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 26.05289F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.34084F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.75318F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.34084F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.2429F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.04701F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 13.22233F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.53606F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.08577F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.59844F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.9883F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 11.79337F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 12.96296F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 14.61988F));
             this.tableLayoutPanel1.Controls.Add(this.label27, 0, 12);
             this.tableLayoutPanel1.Controls.Add(this.label26, 0, 11);
             this.tableLayoutPanel1.Controls.Add(this.label25, 0, 10);
@@ -512,7 +512,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 35F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1064, 496);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1058, 496);
             this.tableLayoutPanel1.TabIndex = 3;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
@@ -641,7 +641,7 @@
             this.comboBox325.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox325.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox325.FormattingEnabled = true;
-            this.comboBox325.Location = new System.Drawing.Point(928, 423);
+            this.comboBox325.Location = new System.Drawing.Point(909, 423);
             this.comboBox325.Name = "comboBox325";
             this.comboBox325.Size = new System.Drawing.Size(113, 28);
             this.comboBox325.TabIndex = 122;
@@ -652,7 +652,7 @@
             this.comboBox324.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox324.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox324.FormattingEnabled = true;
-            this.comboBox324.Location = new System.Drawing.Point(805, 423);
+            this.comboBox324.Location = new System.Drawing.Point(778, 423);
             this.comboBox324.Name = "comboBox324";
             this.comboBox324.Size = new System.Drawing.Size(113, 28);
             this.comboBox324.TabIndex = 121;
@@ -663,7 +663,7 @@
             this.comboBox225.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox225.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox225.FormattingEnabled = true;
-            this.comboBox225.Location = new System.Drawing.Point(680, 423);
+            this.comboBox225.Location = new System.Drawing.Point(659, 423);
             this.comboBox225.Name = "comboBox225";
             this.comboBox225.Size = new System.Drawing.Size(113, 28);
             this.comboBox225.TabIndex = 120;
@@ -674,7 +674,7 @@
             this.comboBox224.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox224.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox224.FormattingEnabled = true;
-            this.comboBox224.Location = new System.Drawing.Point(554, 423);
+            this.comboBox224.Location = new System.Drawing.Point(538, 423);
             this.comboBox224.Name = "comboBox224";
             this.comboBox224.Size = new System.Drawing.Size(113, 28);
             this.comboBox224.TabIndex = 119;
@@ -685,7 +685,7 @@
             this.comboBox323.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox323.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox323.FormattingEnabled = true;
-            this.comboBox323.Location = new System.Drawing.Point(928, 388);
+            this.comboBox323.Location = new System.Drawing.Point(909, 388);
             this.comboBox323.Name = "comboBox323";
             this.comboBox323.Size = new System.Drawing.Size(113, 28);
             this.comboBox323.TabIndex = 118;
@@ -696,7 +696,7 @@
             this.comboBox322.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox322.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox322.FormattingEnabled = true;
-            this.comboBox322.Location = new System.Drawing.Point(805, 388);
+            this.comboBox322.Location = new System.Drawing.Point(778, 388);
             this.comboBox322.Name = "comboBox322";
             this.comboBox322.Size = new System.Drawing.Size(113, 28);
             this.comboBox322.TabIndex = 117;
@@ -707,7 +707,7 @@
             this.comboBox223.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox223.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox223.FormattingEnabled = true;
-            this.comboBox223.Location = new System.Drawing.Point(680, 388);
+            this.comboBox223.Location = new System.Drawing.Point(659, 388);
             this.comboBox223.Name = "comboBox223";
             this.comboBox223.Size = new System.Drawing.Size(113, 28);
             this.comboBox223.TabIndex = 116;
@@ -718,7 +718,7 @@
             this.comboBox222.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox222.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox222.FormattingEnabled = true;
-            this.comboBox222.Location = new System.Drawing.Point(554, 388);
+            this.comboBox222.Location = new System.Drawing.Point(538, 388);
             this.comboBox222.Name = "comboBox222";
             this.comboBox222.Size = new System.Drawing.Size(113, 28);
             this.comboBox222.TabIndex = 115;
@@ -729,7 +729,7 @@
             this.comboBox321.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox321.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox321.FormattingEnabled = true;
-            this.comboBox321.Location = new System.Drawing.Point(928, 353);
+            this.comboBox321.Location = new System.Drawing.Point(909, 353);
             this.comboBox321.Name = "comboBox321";
             this.comboBox321.Size = new System.Drawing.Size(113, 28);
             this.comboBox321.TabIndex = 114;
@@ -740,7 +740,7 @@
             this.comboBox320.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox320.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox320.FormattingEnabled = true;
-            this.comboBox320.Location = new System.Drawing.Point(805, 353);
+            this.comboBox320.Location = new System.Drawing.Point(778, 353);
             this.comboBox320.Name = "comboBox320";
             this.comboBox320.Size = new System.Drawing.Size(113, 28);
             this.comboBox320.TabIndex = 113;
@@ -751,7 +751,7 @@
             this.comboBox221.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox221.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox221.FormattingEnabled = true;
-            this.comboBox221.Location = new System.Drawing.Point(680, 353);
+            this.comboBox221.Location = new System.Drawing.Point(659, 353);
             this.comboBox221.Name = "comboBox221";
             this.comboBox221.Size = new System.Drawing.Size(113, 28);
             this.comboBox221.TabIndex = 112;
@@ -762,7 +762,7 @@
             this.comboBox220.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox220.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox220.FormattingEnabled = true;
-            this.comboBox220.Location = new System.Drawing.Point(554, 353);
+            this.comboBox220.Location = new System.Drawing.Point(538, 353);
             this.comboBox220.Name = "comboBox220";
             this.comboBox220.Size = new System.Drawing.Size(113, 28);
             this.comboBox220.TabIndex = 111;
@@ -773,7 +773,7 @@
             this.comboBox319.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox319.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox319.FormattingEnabled = true;
-            this.comboBox319.Location = new System.Drawing.Point(928, 318);
+            this.comboBox319.Location = new System.Drawing.Point(909, 318);
             this.comboBox319.Name = "comboBox319";
             this.comboBox319.Size = new System.Drawing.Size(113, 28);
             this.comboBox319.TabIndex = 110;
@@ -784,7 +784,7 @@
             this.comboBox318.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox318.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox318.FormattingEnabled = true;
-            this.comboBox318.Location = new System.Drawing.Point(805, 318);
+            this.comboBox318.Location = new System.Drawing.Point(778, 318);
             this.comboBox318.Name = "comboBox318";
             this.comboBox318.Size = new System.Drawing.Size(113, 28);
             this.comboBox318.TabIndex = 109;
@@ -795,7 +795,7 @@
             this.comboBox219.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox219.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox219.FormattingEnabled = true;
-            this.comboBox219.Location = new System.Drawing.Point(680, 318);
+            this.comboBox219.Location = new System.Drawing.Point(659, 318);
             this.comboBox219.Name = "comboBox219";
             this.comboBox219.Size = new System.Drawing.Size(113, 28);
             this.comboBox219.TabIndex = 108;
@@ -806,7 +806,7 @@
             this.comboBox218.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox218.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox218.FormattingEnabled = true;
-            this.comboBox218.Location = new System.Drawing.Point(554, 318);
+            this.comboBox218.Location = new System.Drawing.Point(538, 318);
             this.comboBox218.Name = "comboBox218";
             this.comboBox218.Size = new System.Drawing.Size(113, 28);
             this.comboBox218.TabIndex = 107;
@@ -817,7 +817,7 @@
             this.comboBox317.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox317.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox317.FormattingEnabled = true;
-            this.comboBox317.Location = new System.Drawing.Point(928, 283);
+            this.comboBox317.Location = new System.Drawing.Point(909, 283);
             this.comboBox317.Name = "comboBox317";
             this.comboBox317.Size = new System.Drawing.Size(113, 28);
             this.comboBox317.TabIndex = 106;
@@ -828,7 +828,7 @@
             this.comboBox316.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox316.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox316.FormattingEnabled = true;
-            this.comboBox316.Location = new System.Drawing.Point(805, 283);
+            this.comboBox316.Location = new System.Drawing.Point(778, 283);
             this.comboBox316.Name = "comboBox316";
             this.comboBox316.Size = new System.Drawing.Size(113, 28);
             this.comboBox316.TabIndex = 105;
@@ -839,7 +839,7 @@
             this.comboBox217.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox217.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox217.FormattingEnabled = true;
-            this.comboBox217.Location = new System.Drawing.Point(680, 283);
+            this.comboBox217.Location = new System.Drawing.Point(659, 283);
             this.comboBox217.Name = "comboBox217";
             this.comboBox217.Size = new System.Drawing.Size(113, 28);
             this.comboBox217.TabIndex = 104;
@@ -850,7 +850,7 @@
             this.comboBox216.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox216.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox216.FormattingEnabled = true;
-            this.comboBox216.Location = new System.Drawing.Point(554, 283);
+            this.comboBox216.Location = new System.Drawing.Point(538, 283);
             this.comboBox216.Name = "comboBox216";
             this.comboBox216.Size = new System.Drawing.Size(113, 28);
             this.comboBox216.TabIndex = 103;
@@ -861,7 +861,7 @@
             this.comboBox315.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox315.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox315.FormattingEnabled = true;
-            this.comboBox315.Location = new System.Drawing.Point(928, 248);
+            this.comboBox315.Location = new System.Drawing.Point(909, 248);
             this.comboBox315.Name = "comboBox315";
             this.comboBox315.Size = new System.Drawing.Size(113, 28);
             this.comboBox315.TabIndex = 102;
@@ -872,7 +872,7 @@
             this.comboBox314.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox314.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox314.FormattingEnabled = true;
-            this.comboBox314.Location = new System.Drawing.Point(805, 248);
+            this.comboBox314.Location = new System.Drawing.Point(778, 248);
             this.comboBox314.Name = "comboBox314";
             this.comboBox314.Size = new System.Drawing.Size(113, 28);
             this.comboBox314.TabIndex = 101;
@@ -883,7 +883,7 @@
             this.comboBox215.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox215.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox215.FormattingEnabled = true;
-            this.comboBox215.Location = new System.Drawing.Point(680, 248);
+            this.comboBox215.Location = new System.Drawing.Point(659, 248);
             this.comboBox215.Name = "comboBox215";
             this.comboBox215.Size = new System.Drawing.Size(113, 28);
             this.comboBox215.TabIndex = 100;
@@ -894,7 +894,7 @@
             this.comboBox214.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox214.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox214.FormattingEnabled = true;
-            this.comboBox214.Location = new System.Drawing.Point(554, 248);
+            this.comboBox214.Location = new System.Drawing.Point(538, 248);
             this.comboBox214.Name = "comboBox214";
             this.comboBox214.Size = new System.Drawing.Size(113, 28);
             this.comboBox214.TabIndex = 99;
@@ -905,7 +905,7 @@
             this.comboBox313.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox313.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox313.FormattingEnabled = true;
-            this.comboBox313.Location = new System.Drawing.Point(928, 213);
+            this.comboBox313.Location = new System.Drawing.Point(909, 213);
             this.comboBox313.Name = "comboBox313";
             this.comboBox313.Size = new System.Drawing.Size(113, 28);
             this.comboBox313.TabIndex = 98;
@@ -916,7 +916,7 @@
             this.comboBox312.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox312.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox312.FormattingEnabled = true;
-            this.comboBox312.Location = new System.Drawing.Point(805, 213);
+            this.comboBox312.Location = new System.Drawing.Point(778, 213);
             this.comboBox312.Name = "comboBox312";
             this.comboBox312.Size = new System.Drawing.Size(113, 28);
             this.comboBox312.TabIndex = 97;
@@ -927,7 +927,7 @@
             this.comboBox213.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox213.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox213.FormattingEnabled = true;
-            this.comboBox213.Location = new System.Drawing.Point(680, 213);
+            this.comboBox213.Location = new System.Drawing.Point(659, 213);
             this.comboBox213.Name = "comboBox213";
             this.comboBox213.Size = new System.Drawing.Size(113, 28);
             this.comboBox213.TabIndex = 96;
@@ -938,7 +938,7 @@
             this.comboBox212.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox212.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox212.FormattingEnabled = true;
-            this.comboBox212.Location = new System.Drawing.Point(554, 213);
+            this.comboBox212.Location = new System.Drawing.Point(538, 213);
             this.comboBox212.Name = "comboBox212";
             this.comboBox212.Size = new System.Drawing.Size(113, 28);
             this.comboBox212.TabIndex = 95;
@@ -949,7 +949,7 @@
             this.comboBox311.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox311.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox311.FormattingEnabled = true;
-            this.comboBox311.Location = new System.Drawing.Point(928, 178);
+            this.comboBox311.Location = new System.Drawing.Point(909, 178);
             this.comboBox311.Name = "comboBox311";
             this.comboBox311.Size = new System.Drawing.Size(113, 28);
             this.comboBox311.TabIndex = 94;
@@ -960,7 +960,7 @@
             this.comboBox310.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox310.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox310.FormattingEnabled = true;
-            this.comboBox310.Location = new System.Drawing.Point(805, 178);
+            this.comboBox310.Location = new System.Drawing.Point(778, 178);
             this.comboBox310.Name = "comboBox310";
             this.comboBox310.Size = new System.Drawing.Size(113, 28);
             this.comboBox310.TabIndex = 93;
@@ -971,7 +971,7 @@
             this.comboBox211.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox211.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox211.FormattingEnabled = true;
-            this.comboBox211.Location = new System.Drawing.Point(680, 178);
+            this.comboBox211.Location = new System.Drawing.Point(659, 178);
             this.comboBox211.Name = "comboBox211";
             this.comboBox211.Size = new System.Drawing.Size(113, 28);
             this.comboBox211.TabIndex = 92;
@@ -982,7 +982,7 @@
             this.comboBox210.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox210.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox210.FormattingEnabled = true;
-            this.comboBox210.Location = new System.Drawing.Point(554, 178);
+            this.comboBox210.Location = new System.Drawing.Point(538, 178);
             this.comboBox210.Name = "comboBox210";
             this.comboBox210.Size = new System.Drawing.Size(113, 28);
             this.comboBox210.TabIndex = 91;
@@ -993,7 +993,7 @@
             this.comboBox309.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox309.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox309.FormattingEnabled = true;
-            this.comboBox309.Location = new System.Drawing.Point(928, 143);
+            this.comboBox309.Location = new System.Drawing.Point(909, 143);
             this.comboBox309.Name = "comboBox309";
             this.comboBox309.Size = new System.Drawing.Size(113, 28);
             this.comboBox309.TabIndex = 90;
@@ -1004,7 +1004,7 @@
             this.comboBox308.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox308.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox308.FormattingEnabled = true;
-            this.comboBox308.Location = new System.Drawing.Point(805, 143);
+            this.comboBox308.Location = new System.Drawing.Point(778, 143);
             this.comboBox308.Name = "comboBox308";
             this.comboBox308.Size = new System.Drawing.Size(113, 28);
             this.comboBox308.TabIndex = 89;
@@ -1015,7 +1015,7 @@
             this.comboBox209.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox209.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox209.FormattingEnabled = true;
-            this.comboBox209.Location = new System.Drawing.Point(680, 143);
+            this.comboBox209.Location = new System.Drawing.Point(659, 143);
             this.comboBox209.Name = "comboBox209";
             this.comboBox209.Size = new System.Drawing.Size(113, 28);
             this.comboBox209.TabIndex = 88;
@@ -1026,7 +1026,7 @@
             this.comboBox208.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox208.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox208.FormattingEnabled = true;
-            this.comboBox208.Location = new System.Drawing.Point(554, 143);
+            this.comboBox208.Location = new System.Drawing.Point(538, 143);
             this.comboBox208.Name = "comboBox208";
             this.comboBox208.Size = new System.Drawing.Size(113, 28);
             this.comboBox208.TabIndex = 87;
@@ -1037,7 +1037,7 @@
             this.comboBox307.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox307.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox307.FormattingEnabled = true;
-            this.comboBox307.Location = new System.Drawing.Point(928, 108);
+            this.comboBox307.Location = new System.Drawing.Point(909, 108);
             this.comboBox307.Name = "comboBox307";
             this.comboBox307.Size = new System.Drawing.Size(113, 28);
             this.comboBox307.TabIndex = 86;
@@ -1048,7 +1048,7 @@
             this.comboBox306.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox306.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox306.FormattingEnabled = true;
-            this.comboBox306.Location = new System.Drawing.Point(805, 108);
+            this.comboBox306.Location = new System.Drawing.Point(778, 108);
             this.comboBox306.Name = "comboBox306";
             this.comboBox306.Size = new System.Drawing.Size(113, 28);
             this.comboBox306.TabIndex = 85;
@@ -1059,7 +1059,7 @@
             this.comboBox207.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox207.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox207.FormattingEnabled = true;
-            this.comboBox207.Location = new System.Drawing.Point(680, 108);
+            this.comboBox207.Location = new System.Drawing.Point(659, 108);
             this.comboBox207.Name = "comboBox207";
             this.comboBox207.Size = new System.Drawing.Size(113, 28);
             this.comboBox207.TabIndex = 84;
@@ -1070,7 +1070,7 @@
             this.comboBox206.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox206.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox206.FormattingEnabled = true;
-            this.comboBox206.Location = new System.Drawing.Point(554, 108);
+            this.comboBox206.Location = new System.Drawing.Point(538, 108);
             this.comboBox206.Name = "comboBox206";
             this.comboBox206.Size = new System.Drawing.Size(113, 28);
             this.comboBox206.TabIndex = 83;
@@ -1081,7 +1081,7 @@
             this.comboBox305.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox305.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox305.FormattingEnabled = true;
-            this.comboBox305.Location = new System.Drawing.Point(928, 73);
+            this.comboBox305.Location = new System.Drawing.Point(909, 73);
             this.comboBox305.Name = "comboBox305";
             this.comboBox305.Size = new System.Drawing.Size(113, 28);
             this.comboBox305.TabIndex = 82;
@@ -1092,7 +1092,7 @@
             this.comboBox304.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox304.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox304.FormattingEnabled = true;
-            this.comboBox304.Location = new System.Drawing.Point(805, 73);
+            this.comboBox304.Location = new System.Drawing.Point(778, 73);
             this.comboBox304.Name = "comboBox304";
             this.comboBox304.Size = new System.Drawing.Size(113, 28);
             this.comboBox304.TabIndex = 81;
@@ -1103,7 +1103,7 @@
             this.comboBox205.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox205.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox205.FormattingEnabled = true;
-            this.comboBox205.Location = new System.Drawing.Point(680, 73);
+            this.comboBox205.Location = new System.Drawing.Point(659, 73);
             this.comboBox205.Name = "comboBox205";
             this.comboBox205.Size = new System.Drawing.Size(113, 28);
             this.comboBox205.TabIndex = 80;
@@ -1114,7 +1114,7 @@
             this.comboBox204.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox204.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox204.FormattingEnabled = true;
-            this.comboBox204.Location = new System.Drawing.Point(554, 73);
+            this.comboBox204.Location = new System.Drawing.Point(538, 73);
             this.comboBox204.Name = "comboBox204";
             this.comboBox204.Size = new System.Drawing.Size(113, 28);
             this.comboBox204.TabIndex = 79;
@@ -1125,7 +1125,7 @@
             this.comboBox303.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox303.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox303.FormattingEnabled = true;
-            this.comboBox303.Location = new System.Drawing.Point(928, 38);
+            this.comboBox303.Location = new System.Drawing.Point(909, 38);
             this.comboBox303.Name = "comboBox303";
             this.comboBox303.Size = new System.Drawing.Size(113, 28);
             this.comboBox303.TabIndex = 78;
@@ -1136,7 +1136,7 @@
             this.comboBox302.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox302.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox302.FormattingEnabled = true;
-            this.comboBox302.Location = new System.Drawing.Point(805, 38);
+            this.comboBox302.Location = new System.Drawing.Point(778, 38);
             this.comboBox302.Name = "comboBox302";
             this.comboBox302.Size = new System.Drawing.Size(113, 28);
             this.comboBox302.TabIndex = 77;
@@ -1147,7 +1147,7 @@
             this.comboBox203.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox203.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox203.FormattingEnabled = true;
-            this.comboBox203.Location = new System.Drawing.Point(680, 38);
+            this.comboBox203.Location = new System.Drawing.Point(659, 38);
             this.comboBox203.Name = "comboBox203";
             this.comboBox203.Size = new System.Drawing.Size(113, 28);
             this.comboBox203.TabIndex = 76;
@@ -1158,7 +1158,7 @@
             this.comboBox202.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox202.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox202.FormattingEnabled = true;
-            this.comboBox202.Location = new System.Drawing.Point(554, 38);
+            this.comboBox202.Location = new System.Drawing.Point(538, 38);
             this.comboBox202.Name = "comboBox202";
             this.comboBox202.Size = new System.Drawing.Size(113, 28);
             this.comboBox202.TabIndex = 75;
@@ -1169,7 +1169,7 @@
             this.comboBox301.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox301.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox301.FormattingEnabled = true;
-            this.comboBox301.Location = new System.Drawing.Point(928, 3);
+            this.comboBox301.Location = new System.Drawing.Point(909, 3);
             this.comboBox301.Name = "comboBox301";
             this.comboBox301.Size = new System.Drawing.Size(113, 28);
             this.comboBox301.TabIndex = 74;
@@ -1180,7 +1180,7 @@
             this.comboBox300.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox300.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox300.FormattingEnabled = true;
-            this.comboBox300.Location = new System.Drawing.Point(805, 3);
+            this.comboBox300.Location = new System.Drawing.Point(778, 3);
             this.comboBox300.Name = "comboBox300";
             this.comboBox300.Size = new System.Drawing.Size(113, 28);
             this.comboBox300.TabIndex = 73;
@@ -1191,7 +1191,7 @@
             this.comboBox201.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox201.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox201.FormattingEnabled = true;
-            this.comboBox201.Location = new System.Drawing.Point(680, 3);
+            this.comboBox201.Location = new System.Drawing.Point(659, 3);
             this.comboBox201.Name = "comboBox201";
             this.comboBox201.Size = new System.Drawing.Size(113, 28);
             this.comboBox201.TabIndex = 72;
@@ -1202,7 +1202,7 @@
             this.comboBox200.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox200.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox200.FormattingEnabled = true;
-            this.comboBox200.Location = new System.Drawing.Point(554, 3);
+            this.comboBox200.Location = new System.Drawing.Point(538, 3);
             this.comboBox200.Name = "comboBox200";
             this.comboBox200.Size = new System.Drawing.Size(113, 28);
             this.comboBox200.TabIndex = 71;
@@ -1213,9 +1213,9 @@
             this.comboBox101.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox101.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox101.FormattingEnabled = true;
-            this.comboBox101.Location = new System.Drawing.Point(434, 3);
+            this.comboBox101.Location = new System.Drawing.Point(421, 3);
             this.comboBox101.Name = "comboBox101";
-            this.comboBox101.Size = new System.Drawing.Size(112, 28);
+            this.comboBox101.Size = new System.Drawing.Size(111, 28);
             this.comboBox101.TabIndex = 36;
             // 
             // comboBox8
@@ -1235,7 +1235,13 @@
             "Urdu",
             "English",
             "Science",
-            "Nazra"});
+            "General Knowledge",
+            "General Knowledge",
+            "",
+            "Nazra",
+            "General Knowledge",
+            "",
+            "General Knowledge"});
             this.comboBox8.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox8.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox8.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1263,7 +1269,9 @@
             "Urdu",
             "English",
             "Science",
-            "Nazra"});
+            "Nazra",
+            "General Knowledge",
+            "General Knowledge"});
             this.comboBox9.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox9.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox9.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1290,7 +1298,9 @@
             "Urdu",
             "English",
             "Science",
-            "Nazra"});
+            "General Knowledge",
+            "Nazra",
+            "General Knowledge"});
             this.comboBox10.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox10.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox10.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1317,6 +1327,10 @@
             "Urdu",
             "English",
             "Science",
+            "General Knowledge",
+            "General Knowledge",
+            "General Knowledge",
+            "",
             "Nazra"});
             this.comboBox11.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox11.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
@@ -1341,7 +1355,8 @@
             "Drawing",
             "Pak Studies",
             "Social St.",
-            "Nazra"});
+            "Nazra",
+            "General Knowledge"});
             this.comboBox12.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox12.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox12.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1368,6 +1383,7 @@
             "Urdu",
             "English",
             "Science",
+            "General Knowledge",
             "Nazra"});
             this.comboBox13.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox13.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
@@ -1395,7 +1411,9 @@
             "Urdu",
             "English",
             "Science",
-            "Nazra"});
+            "General Knowledge",
+            "Nazra",
+            "General Knowledge"});
             this.comboBox14.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox14.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox14.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1422,6 +1440,8 @@
             "Urdu",
             "English",
             "Science",
+            "General Knowledge",
+            "General Knowledge",
             "Nazra"});
             this.comboBox15.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox15.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
@@ -1449,6 +1469,8 @@
             "Urdu",
             "English",
             "Science",
+            "General Knowledge",
+            "",
             "Nazra"});
             this.comboBox16.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox16.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
@@ -1476,7 +1498,8 @@
             "Urdu",
             "English",
             "Science",
-            "Nazra"});
+            "Nazra",
+            "General Knowledge"});
             this.comboBox17.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox17.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.comboBox17.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1503,6 +1526,7 @@
             "Urdu",
             "English",
             "Science",
+            "General Knowledge",
             "Nazra",
             "NazraEnglish Oral",
             "English Written",
@@ -1545,6 +1569,8 @@
             "Urdu",
             "English",
             "Science",
+            "General Knowledge",
+            "",
             "Nazra"});
             this.comboBox19.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox19.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
@@ -1572,6 +1598,7 @@
             "Urdu",
             "English",
             "Science",
+            "General Knowledge",
             "Nazra"});
             this.comboBox20.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.comboBox20.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
@@ -1588,7 +1615,7 @@
             this.comboBox100.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox100.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox100.FormattingEnabled = true;
-            this.comboBox100.Location = new System.Drawing.Point(308, 3);
+            this.comboBox100.Location = new System.Drawing.Point(299, 3);
             this.comboBox100.Name = "comboBox100";
             this.comboBox100.Size = new System.Drawing.Size(113, 28);
             this.comboBox100.TabIndex = 35;
@@ -1600,7 +1627,7 @@
             this.comboBox102.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox102.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox102.FormattingEnabled = true;
-            this.comboBox102.Location = new System.Drawing.Point(308, 38);
+            this.comboBox102.Location = new System.Drawing.Point(299, 38);
             this.comboBox102.Name = "comboBox102";
             this.comboBox102.Size = new System.Drawing.Size(113, 28);
             this.comboBox102.TabIndex = 37;
@@ -1611,9 +1638,9 @@
             this.comboBox103.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox103.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox103.FormattingEnabled = true;
-            this.comboBox103.Location = new System.Drawing.Point(434, 38);
+            this.comboBox103.Location = new System.Drawing.Point(421, 38);
             this.comboBox103.Name = "comboBox103";
-            this.comboBox103.Size = new System.Drawing.Size(112, 28);
+            this.comboBox103.Size = new System.Drawing.Size(111, 28);
             this.comboBox103.TabIndex = 38;
             // 
             // comboBox104
@@ -1622,7 +1649,7 @@
             this.comboBox104.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox104.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox104.FormattingEnabled = true;
-            this.comboBox104.Location = new System.Drawing.Point(308, 73);
+            this.comboBox104.Location = new System.Drawing.Point(299, 73);
             this.comboBox104.Name = "comboBox104";
             this.comboBox104.Size = new System.Drawing.Size(113, 28);
             this.comboBox104.TabIndex = 39;
@@ -1633,9 +1660,9 @@
             this.comboBox105.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox105.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox105.FormattingEnabled = true;
-            this.comboBox105.Location = new System.Drawing.Point(434, 73);
+            this.comboBox105.Location = new System.Drawing.Point(421, 73);
             this.comboBox105.Name = "comboBox105";
-            this.comboBox105.Size = new System.Drawing.Size(112, 28);
+            this.comboBox105.Size = new System.Drawing.Size(111, 28);
             this.comboBox105.TabIndex = 40;
             // 
             // comboBox106
@@ -1644,7 +1671,7 @@
             this.comboBox106.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox106.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox106.FormattingEnabled = true;
-            this.comboBox106.Location = new System.Drawing.Point(308, 108);
+            this.comboBox106.Location = new System.Drawing.Point(299, 108);
             this.comboBox106.Name = "comboBox106";
             this.comboBox106.Size = new System.Drawing.Size(113, 28);
             this.comboBox106.TabIndex = 41;
@@ -1655,9 +1682,9 @@
             this.comboBox107.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox107.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox107.FormattingEnabled = true;
-            this.comboBox107.Location = new System.Drawing.Point(434, 108);
+            this.comboBox107.Location = new System.Drawing.Point(421, 108);
             this.comboBox107.Name = "comboBox107";
-            this.comboBox107.Size = new System.Drawing.Size(112, 28);
+            this.comboBox107.Size = new System.Drawing.Size(111, 28);
             this.comboBox107.TabIndex = 42;
             // 
             // comboBox108
@@ -1666,7 +1693,7 @@
             this.comboBox108.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox108.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox108.FormattingEnabled = true;
-            this.comboBox108.Location = new System.Drawing.Point(308, 143);
+            this.comboBox108.Location = new System.Drawing.Point(299, 143);
             this.comboBox108.Name = "comboBox108";
             this.comboBox108.Size = new System.Drawing.Size(113, 28);
             this.comboBox108.TabIndex = 43;
@@ -1677,9 +1704,9 @@
             this.comboBox109.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox109.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox109.FormattingEnabled = true;
-            this.comboBox109.Location = new System.Drawing.Point(434, 143);
+            this.comboBox109.Location = new System.Drawing.Point(421, 143);
             this.comboBox109.Name = "comboBox109";
-            this.comboBox109.Size = new System.Drawing.Size(112, 28);
+            this.comboBox109.Size = new System.Drawing.Size(111, 28);
             this.comboBox109.TabIndex = 44;
             // 
             // comboBox110
@@ -1688,7 +1715,7 @@
             this.comboBox110.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox110.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox110.FormattingEnabled = true;
-            this.comboBox110.Location = new System.Drawing.Point(308, 178);
+            this.comboBox110.Location = new System.Drawing.Point(299, 178);
             this.comboBox110.Name = "comboBox110";
             this.comboBox110.Size = new System.Drawing.Size(113, 28);
             this.comboBox110.TabIndex = 45;
@@ -1699,9 +1726,9 @@
             this.comboBox111.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox111.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox111.FormattingEnabled = true;
-            this.comboBox111.Location = new System.Drawing.Point(434, 178);
+            this.comboBox111.Location = new System.Drawing.Point(421, 178);
             this.comboBox111.Name = "comboBox111";
-            this.comboBox111.Size = new System.Drawing.Size(112, 28);
+            this.comboBox111.Size = new System.Drawing.Size(111, 28);
             this.comboBox111.TabIndex = 46;
             // 
             // comboBox112
@@ -1710,7 +1737,7 @@
             this.comboBox112.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox112.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox112.FormattingEnabled = true;
-            this.comboBox112.Location = new System.Drawing.Point(308, 213);
+            this.comboBox112.Location = new System.Drawing.Point(299, 213);
             this.comboBox112.Name = "comboBox112";
             this.comboBox112.Size = new System.Drawing.Size(113, 28);
             this.comboBox112.TabIndex = 47;
@@ -1721,9 +1748,9 @@
             this.comboBox113.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox113.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox113.FormattingEnabled = true;
-            this.comboBox113.Location = new System.Drawing.Point(434, 213);
+            this.comboBox113.Location = new System.Drawing.Point(421, 213);
             this.comboBox113.Name = "comboBox113";
-            this.comboBox113.Size = new System.Drawing.Size(112, 28);
+            this.comboBox113.Size = new System.Drawing.Size(111, 28);
             this.comboBox113.TabIndex = 48;
             // 
             // comboBox114
@@ -1732,7 +1759,7 @@
             this.comboBox114.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox114.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox114.FormattingEnabled = true;
-            this.comboBox114.Location = new System.Drawing.Point(308, 248);
+            this.comboBox114.Location = new System.Drawing.Point(299, 248);
             this.comboBox114.Name = "comboBox114";
             this.comboBox114.Size = new System.Drawing.Size(113, 28);
             this.comboBox114.TabIndex = 49;
@@ -1743,9 +1770,9 @@
             this.comboBox115.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox115.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox115.FormattingEnabled = true;
-            this.comboBox115.Location = new System.Drawing.Point(434, 248);
+            this.comboBox115.Location = new System.Drawing.Point(421, 248);
             this.comboBox115.Name = "comboBox115";
-            this.comboBox115.Size = new System.Drawing.Size(112, 28);
+            this.comboBox115.Size = new System.Drawing.Size(111, 28);
             this.comboBox115.TabIndex = 50;
             // 
             // comboBox116
@@ -1754,7 +1781,7 @@
             this.comboBox116.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox116.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox116.FormattingEnabled = true;
-            this.comboBox116.Location = new System.Drawing.Point(308, 283);
+            this.comboBox116.Location = new System.Drawing.Point(299, 283);
             this.comboBox116.Name = "comboBox116";
             this.comboBox116.Size = new System.Drawing.Size(113, 28);
             this.comboBox116.TabIndex = 51;
@@ -1765,9 +1792,9 @@
             this.comboBox117.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox117.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox117.FormattingEnabled = true;
-            this.comboBox117.Location = new System.Drawing.Point(434, 283);
+            this.comboBox117.Location = new System.Drawing.Point(421, 283);
             this.comboBox117.Name = "comboBox117";
-            this.comboBox117.Size = new System.Drawing.Size(112, 28);
+            this.comboBox117.Size = new System.Drawing.Size(111, 28);
             this.comboBox117.TabIndex = 52;
             // 
             // comboBox118
@@ -1776,7 +1803,7 @@
             this.comboBox118.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox118.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox118.FormattingEnabled = true;
-            this.comboBox118.Location = new System.Drawing.Point(308, 318);
+            this.comboBox118.Location = new System.Drawing.Point(299, 318);
             this.comboBox118.Name = "comboBox118";
             this.comboBox118.Size = new System.Drawing.Size(113, 28);
             this.comboBox118.TabIndex = 53;
@@ -1787,9 +1814,9 @@
             this.comboBox119.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox119.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox119.FormattingEnabled = true;
-            this.comboBox119.Location = new System.Drawing.Point(434, 318);
+            this.comboBox119.Location = new System.Drawing.Point(421, 318);
             this.comboBox119.Name = "comboBox119";
-            this.comboBox119.Size = new System.Drawing.Size(112, 28);
+            this.comboBox119.Size = new System.Drawing.Size(111, 28);
             this.comboBox119.TabIndex = 54;
             // 
             // comboBox120
@@ -1798,7 +1825,7 @@
             this.comboBox120.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox120.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox120.FormattingEnabled = true;
-            this.comboBox120.Location = new System.Drawing.Point(308, 353);
+            this.comboBox120.Location = new System.Drawing.Point(299, 353);
             this.comboBox120.Name = "comboBox120";
             this.comboBox120.Size = new System.Drawing.Size(113, 28);
             this.comboBox120.TabIndex = 55;
@@ -1809,9 +1836,9 @@
             this.comboBox121.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox121.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox121.FormattingEnabled = true;
-            this.comboBox121.Location = new System.Drawing.Point(434, 353);
+            this.comboBox121.Location = new System.Drawing.Point(421, 353);
             this.comboBox121.Name = "comboBox121";
-            this.comboBox121.Size = new System.Drawing.Size(112, 28);
+            this.comboBox121.Size = new System.Drawing.Size(111, 28);
             this.comboBox121.TabIndex = 56;
             // 
             // comboBox122
@@ -1820,7 +1847,7 @@
             this.comboBox122.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox122.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox122.FormattingEnabled = true;
-            this.comboBox122.Location = new System.Drawing.Point(308, 388);
+            this.comboBox122.Location = new System.Drawing.Point(299, 388);
             this.comboBox122.Name = "comboBox122";
             this.comboBox122.Size = new System.Drawing.Size(113, 28);
             this.comboBox122.TabIndex = 57;
@@ -1831,9 +1858,9 @@
             this.comboBox123.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox123.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox123.FormattingEnabled = true;
-            this.comboBox123.Location = new System.Drawing.Point(434, 388);
+            this.comboBox123.Location = new System.Drawing.Point(421, 388);
             this.comboBox123.Name = "comboBox123";
-            this.comboBox123.Size = new System.Drawing.Size(112, 28);
+            this.comboBox123.Size = new System.Drawing.Size(111, 28);
             this.comboBox123.TabIndex = 58;
             // 
             // comboBox124
@@ -1842,7 +1869,7 @@
             this.comboBox124.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox124.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox124.FormattingEnabled = true;
-            this.comboBox124.Location = new System.Drawing.Point(308, 423);
+            this.comboBox124.Location = new System.Drawing.Point(299, 423);
             this.comboBox124.Name = "comboBox124";
             this.comboBox124.Size = new System.Drawing.Size(113, 28);
             this.comboBox124.TabIndex = 59;
@@ -1853,9 +1880,9 @@
             this.comboBox125.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.comboBox125.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox125.FormattingEnabled = true;
-            this.comboBox125.Location = new System.Drawing.Point(434, 423);
+            this.comboBox125.Location = new System.Drawing.Point(421, 423);
             this.comboBox125.Name = "comboBox125";
-            this.comboBox125.Size = new System.Drawing.Size(112, 28);
+            this.comboBox125.Size = new System.Drawing.Size(111, 28);
             this.comboBox125.TabIndex = 60;
             // 
             // label14
@@ -2005,8 +2032,15 @@
             // aboutUsToolStripMenuItem
             // 
             this.aboutUsToolStripMenuItem.Name = "aboutUsToolStripMenuItem";
-            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutUsToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
             this.aboutUsToolStripMenuItem.Text = "About Us";
+            // 
+            // newToolStripMenuItem
+            // 
+            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(123, 22);
+            this.newToolStripMenuItem.Text = "New";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // checkBox1
             // 
@@ -2104,13 +2138,6 @@
             this.button1.Text = "PRINT";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // newToolStripMenuItem
-            // 
-            this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.newToolStripMenuItem.Text = "New";
-            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // BySoftFort
             // 
